@@ -43,10 +43,13 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "customize-cra": "^1.0.0-alpha.0",
     "less": "^3.13.1",
     "less-loader": "^5.0.0",
     "mockjs": "^1.1.0",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "typescript": "^4.7.4"
   }
 }
