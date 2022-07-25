@@ -8,8 +8,8 @@ export default function Goods() {
   const [list, setList] = useState([]);
   // 请求获取初始商品列表
   useEffect(() => {
-    fetchMoreGoods({ pageNum: 1, pageSize: 10 }).then((res) =>
-      setList(res.list)
+    fetchMoreGoods({ pageNum: 1, pageSize: 10 }).then((data) =>
+      setList(data?.list || [])
     );
   }, []);
   // 滚轮触发获取更多商品
