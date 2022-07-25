@@ -37,7 +37,7 @@ export const useScrollGetMore = (props) => {
         page.current += 1;
       }
     };
-    const throttleOnScroll = throttle(onScroll, 100);
+    const throttleOnScroll = throttle(onScroll, 50);
     container.addEventListener("scroll", throttleOnScroll);
     return () => container.removeEventListener("scroll", throttleOnScroll);
   }, [status, newList]);

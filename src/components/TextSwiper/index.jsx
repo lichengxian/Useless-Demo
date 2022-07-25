@@ -3,7 +3,7 @@ import styles from "./index.module.less";
 import { useInterval } from "ahooks";
 import cn from "classnames";
 
-export default function Goods(props) {
+export default function TextSwiper(props) {
   const { textArray, className, delay = 1500, transition = 500 } = props;
   const textNum = textArray.length;
   const swiperRef = useRef(null);
